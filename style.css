@@ -1,0 +1,171 @@
+/*  Estilização do projeto HTML com CSS
+*   Instrutora: Rafaella Ballerini - YTube
+*
+*   A estilização deve seguir a hierarquia do arquivo HTML. Fica melhor organizado
+*/
+/*  Padronização da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* configura as margens da pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estiliza os elementos do corpo da pagina*/
+body {
+    background-color: #f4f0ea;
+    color: #798252;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+}
+/* Estilizando o header
+*   pixel é uma unidade de medida fixa
+*   rem é uma unidade de medida relativa a plataforma utilizada pelo usuario
+ */
+header {
+    padding: 2rem;
+    background-color: #331f19;
+    text-align: center;
+}
+/*
+*   Estilizando a tag main e seus elementos
+*/
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;     /* ajusta colunas da pagin*/
+    gap: 1.5rem;                /* define o espaçamento entre as section */
+}
+/*  ajusta espaçamento entre as tags <section>  */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/*  Estiliza as tags <h2>*/
+h2 {
+    color: #331f19;
+    font-size: 1.2rem;
+}
+/*  Estiliza os input type, select, placeholder  */
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #ccd595;
+}
+ 
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #ccd595;
+    outline: none;      /* acessibilidade*/
+    border-radius: 5px; /* arrendonda os cantos da caixa de resposta */
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: #cbbba7;
+}
+
+select {
+    cursor: pointer;
+    background-color: #ccd595;
+    color: #331f19;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+img {
+    width: 5rem;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #ccd595;
+    color: #331f19;
+    padding: 1rem;
+}
+
+td {
+    color: #331f19;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Aqui 'td' é descendente de tfoot*/
+tfoot td {
+    background-color: #331f19;
+    color: #f4f0ea;
+}
+
+details {
+    background-color: #ccd595;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+summary {
+    color: #331f19;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+ol {
+    margin-left: 2.5rem;
+}
+
+ol li {
+    padding: 0.2rem;
+}
+
+fieldset {
+    border: 2px solid #ccd595;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend {
+    color: #331f19;
+    padding: 0 0.5; /* alinhamento vertical e horizontal*/
+}
+
+textarea {
+    background-color: #ccd595;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #ccd595;
+    background-color: transparent;
+}
+
+button {
+    background-color: #ccd595;
+    border: none;
+    padding: 0.8rem;
+    color: #331f19;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*
+*   Estilizando o footer d\ página
+*   * no HTML criamos uma classe e vamos referencia-la aqui, e pode se usar uma classe para mais de um elemento
+*   * iniciando com um 'ponto'
+*/
+footer {
+    background-color: #331f19;
+    padding: 2rem;
+    text-align: center;
+}
+
+.paragrafo-footer {
+    color: #f4f0ea;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ccd595;
+}
